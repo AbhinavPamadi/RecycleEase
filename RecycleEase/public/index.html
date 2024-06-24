@@ -180,7 +180,7 @@
               <textarea name="message" class="message" id="message" cols="80" rows="10" required="required"></textarea>
               <span>Comments/Suggestions/Complaints</span>
              </div>
-             <button class="cnt-btn" type="submit" id="contact" onclick="location.href = 'index.html';">Submit</button>
+             <button class="cnt-btn" type="submit" id="contact" >Submit</button>
         </form>
       </div>
       <!--mobile view code for contact form --->
@@ -1021,7 +1021,7 @@
                                       const scriptURL = 'https://script.google.com/macros/s/AKfycbxF6bibiy2oYzOIOrAtEsMw78uyU6ifHZpmzAYflDcGAgkSZRjHkwcBVhU0FXzT8F_m-w/exec'
                                       const form = document.forms['google-sheet']
 
-                                      form.addEventListener('submit', (e) => {
+                                      form.addEventListener('submit', e => {
                                         e.preventDefault()
                                         fetch(scriptURL, {
                                           method: 'POST',
